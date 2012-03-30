@@ -1,0 +1,80 @@
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log opened at 2012-02-10 08:36:09
+hint
+project --topLevelPackage com.rahul.learn 
+mongo setup 
+entity mongo --class ~.domain.Shop 
+field string --fieldName name
+web mvc json setup
+json all
+web mvc json all --package ~.web
+service --interface ~.service.ShopService --entity ~.domain.Shop
+repository mongo --interface ~.repository.ShopRepository --entity ~.domain.Shop
+exit
+// Spring Roo 1.2.0.RELEASE [rev 39eb957] log closed at 2012-02-10 11:59:19
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-02-12 20:16:10
+exit
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-02-12 20:16:28
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-02-12 21:11:24
+exit
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-02-12 21:29:22
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-02-12 22:11:45
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-02-12 22:22:10
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-02-14 09:01:59
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml.zip
+osgi obr start --bundleSymbolicName org.springframework.roo.addon.cloud.foundry
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml.zip
+addon install bundle --bundleSymbolicName org.springframework.roo.addon.cloud.foundry 
+addon install bundle --bundleSymbolicName org.springframework.http.client
+addon install bundle --bundleSymbolicName org.springframework.web.client
+addon install bundle --bundleSymbolicName org.springframework.http
+addon upgrade all
+pgp automatic trust
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml.zip
+osgi obr start --bundleSymbolicName org.springframework.roo.addon.cloud.foundry
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml.zip
+addon install bundle --bundleSymbolicName org.springframework.roo.addon.cloud.foundry
+addon info id --searchResultId 01
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml.zip
+osgi obr start --bundleSymbolicName org.springframework.roo.addon.cloud.foundry
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml.zip
+addon install id --searchResultId 01
+dependency add --groupId org.springframework --artifactId org.springframework.web --version 3.1.0.RELEASE
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml.zip
+osgi obr start --bundleSymbolicName org.springframework.roo.addon.cloud.foundry
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml.zip
+addon install id --searchResultId 01
+dependency add --groupId org.springframework --artifactId org.springframework.web.client --version 3.1.0.RELEASE
+dependency add --groupId org.springframework --artifactId org.springframework.http.client --version 3.1.0.RELEASE
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml.zip
+osgi obr start --bundleSymbolicName org.springframework.roo.addon.cloud.foundry
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml.zip
+addon install id --searchResultId 01
+dependency remove --groupId org.springframework --artifactId org.springframework.http.client --version 3.1.0.RELEASE
+dependency remove --groupId org.springframework --artifactId org.springframework.web.client --version 3.1.0.RELEASE
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml.zip
+osgi obr start --bundleSymbolicName org.springframework.roo.addon.cloud.foundry
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml.zip
+addon install id --searchResultId 01
+dependency add --groupId org.springframework --artifactId spring-web --version 3.1.0.RELEASE
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml.zip
+osgi obr start --bundleSymbolicName org.springframework.roo.addon.cloud.foundry
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml.zip
+addon install id --searchResultId 01
+perform package
+dependency remove --groupId org.springframework --artifactId spring-web --version 3.1.0.RELEASE
+dependency remove --groupId org.springframework --artifactId spring-web --version 3.1.0.RELEASE
+dependency add --groupId org.springframework.spring-web --artifactId spring-web --version 3.1.0.RELEASE
+perform package
+dependency remove --groupId org.springframework.spring-web --artifactId spring-web --version 3.1.0.RELEASE
+exit
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-02-14 09:49:16
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-02-14 14:51:01
+addon install id --searchResultId 01
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml.zip
+osgi obr start --bundleSymbolicName org.springframework.roo.addon.cloud.foundry
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml.zip
+addon install id --searchResultId 01
+exit
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-02-14 17:07:42
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-22 17:48:16
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-22 21:33:08
